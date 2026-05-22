@@ -16,7 +16,7 @@ const Footer = () => {
           <i className='far fa-copyright mr-1' />
           {copyrightDate} {author}. All Rights Reserved.
         </p>
-        <p className='mt-1'>
+{/* <p className='mt-1'>
           Powered by{' '}
           <a
             href='https://github.com/tangly1024/NotionNext'
@@ -29,7 +29,7 @@ const Footer = () => {
           <span className='font-semibold text-[var(--fuwari-primary)]'>
             Fuwari
           </span>
-        </p>
+        </p> */}
         <p className='mt-2 flex flex-wrap items-center justify-center gap-x-2 gap-y-1 text-xs [&_a]:fuwari-link [&_br]:hidden'>
           <BeiAnSite />
           <BeiAnGongAn className='inline-flex items-center justify-center' />
