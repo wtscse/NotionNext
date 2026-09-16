@@ -5,7 +5,9 @@
 > 原栏目：📊 网站统计
 > 标签：NotionNext、站点统计
 
-> **💡** 作为站长，站点统计功能对于管理和优化你的网站非常重要。它可以提供有关访问者行为、流量来源和网站性能的关键信息，帮助你做出数据驱动的决策和改进网站体验。
+::: tip 提示
+作为站长，站点统计功能对于管理和优化你的网站非常重要。它可以提供有关访问者行为、流量来源和网站性能的关键信息，帮助你做出数据驱动的决策和改进网站体验。
+:::
 
 站点统计功能的一些主要作用：
 
@@ -27,7 +29,7 @@
 
 1. Ackee：这是一款自托管的开源统计工具，可以在你自己的服务器上搭建，提供了强大的个性化定制和隐私保护功能。
 
-1. [Clarity](https://docs.tangly1024.com/article/notion-next-clarity)统计：最近我才发现的、微软推出的统计工具，很好用，而且在国内访问体验很好。
+1. [Clarity](/user-guide/analytics/clarity)统计：最近我才发现的、微软推出的统计工具，很好用，而且在国内访问体验很好。
 
 这些统计方案在功能和报告类型上略有不同，你可以根据自己的需求选择最适合你的方案。无论你选择哪种方案，站点统计功能都将帮助你更好地了解和优化你的网站。
 
@@ -71,7 +73,7 @@ ANALYTICS_GOOGLE_ID: process.env.NEXT_PUBLIC_ANALYTICS_GOOGLE_ID || '', // 谷�
 ![Untitled](/legacy/5af36fcdda61b725.png)
 
 - 配置失效怎么办？
-  - 参考站点配置的文档，进行r[edeploy](https://docs.tangly1024.com/article/how-to-config-notion-next#c4768010ae7d44609b744e79e2f9959a)
+  - 参考站点配置的文档，进行r[edeploy](/user-guide/config-site#c4768010ae7d44609b744e79e2f9959a)
 
 ## 原文链接
 

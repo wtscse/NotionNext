@@ -69,11 +69,11 @@ SaleSmartly的免费版上线是一千个会话，即超过一千位客户咨询
 
 直接我的这行配置到notion中，再将url改成你的即可：
 
-> **💡**
->
+::: tip 提示
 这里**配置值**是需要用中括号加英文双引号拼起来[””]，它代表一串配置数组，支持多个用英文逗号隔开。例如["https://1.js","https://2.js","https://3.js"]
->
-> 直接在Notion中手动输入这项配置时，Notion会自动将英文的双引号转成中文，导致软件报错，因此建议复制我这里写好的格式，再将url替换成您自己的。
+
+直接在Notion中手动输入这项配置时，Notion会自动将英文的双引号转成中文，导致软件报错，因此建议复制我这里写好的格式，再将url替换成您自己的。
+:::
 
 <details>
 <summary>~~旧版配置方法（废弃）~~</summary>
@@ -97,7 +97,7 @@ SaleSmartly的免费版上线是一千个会话，即超过一千位客户咨询
 
 ## 其它聊天插件选择
 
-你可以任意查找网上的其它插件进行安装，例如参考文档中的[TIDIO插件安装](https://docs.tangly1024.com/article/notion-next-tidio)或者使用[Chatway聊天插件](https://go.chatway.app/)，他们与SaleSmartly的安装方式基本一致。例如Chatway插件配置也是添加一个脚本地址即可，示例如下：
+你可以任意查找网上的其它插件进行安装，例如参考文档中的[TIDIO插件安装](/user-guide/plugins/notion-next-tidio)或者使用[Chatway聊天插件](https://go.chatway.app/)，他们与SaleSmartly的安装方式基本一致。例如Chatway插件配置也是添加一个脚本地址即可，示例如下：
 
 ![image.png](/legacy/5d79121e1e4e2e6d.png)
 

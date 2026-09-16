@@ -6,7 +6,9 @@
 > 标签：NotionNext、部署方案、Web3
 > 摘要：部署在Web3.0平台上的网站能够提供更加安全、透明、去中心化和创新的服务，为用户带来更好的体验和价值。NotionNext支持部署在去中心化的Web3.0平台上，这将为用户提供更加安全和可靠的服务，同时也将为网站带来新的商业机会和竞争优势。
 
-> **💡** NotionNext支持部署在去中心化的Web3.0平台，可以尝试体验一下
+::: tip 提示
+NotionNext支持部署在去中心化的Web3.0平台，可以尝试体验一下
+:::
 
 ![download.jpg](/legacy/26cf0917cf2fe01f.jpg)
 
@@ -104,7 +106,7 @@ Web3.0的核心是区块链技术，它是一种去中心化的分布式数据�
 
 ## 4.特别说明
 
-[cloudflarePage](https://www.tangly1024.com/article/notion-next-cloud-flare) 和 4everland 这两种部署方案，实际上是将Next项目导出为静态html。
+[cloudflarePage](/user-guide/deploy/cloudflare-pages) 和 4everland 这两种部署方案，实际上是将Next项目导出为静态html。
 
 这样做的缺陷是不支持根据notion内容动态更新。
 

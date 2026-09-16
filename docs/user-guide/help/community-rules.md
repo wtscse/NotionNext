@@ -4,22 +4,24 @@
 > 最后编辑：2024-10-2
 > 原栏目：👨‍👦‍👦 获取帮助
 
-> **📢**
->
+::: info 公告
 NotionNext并未商业化，一切开发和帮助都由网友自发进行、用爱发电。
+:::
 
 
 ## 序
 
 NotionNext提供了博客文档，社群交流，评论留言、邮件等渠道可供您获取帮助。
 
-1. 您可以免费分享的[操作文档](https://docs.tangly1024.com/about)中，看到建站教学，步骤很简单。
+1. 您可以免费分享的[操作文档](/user-guide/intro)中，看到建站教学，步骤很简单。
 
-1. 您可以通过右下角的AI机器人[留言](https://docs.tangly1024.com/article/about-author)进行求助。
+1. 您可以通过右下角的AI机器人[留言](/user-guide/help/feedback)进行求助。
 
-1. 加入[站长社群](https://docs.tangly1024.com/article/chat-community)寻求帮助，群友来自各行各业的博主和技术专家。
+1. 加入[站长社群](/user-guide/help/community)寻求帮助，群友来自各行各业的博主和技术专家。
 
-> **💡** 我希望您在这个群体中能找到优秀的、志同道合的朋友，建立友好的关系。我认为与优秀的人同行，比去哪里更重要。
+::: tip 提示
+我希望您在这个群体中能找到优秀的、志同道合的朋友，建立友好的关系。我认为与优秀的人同行，比去哪里更重要。
+:::
 
 
 ## 互动规范
@@ -32,16 +34,18 @@ NotionNext提供了博客文档，社群交流，评论留言、邮件等渠道�
 
 然后呢？原先情况是什么？目前具体坏哪一个位置坏了？目标预期是什么？操作了什么？现在你的诉求是什么？
 
-> **💡** 好的提问，是成功的一半。能否”**挣到**“想要的答案，取决于您的提问水平。因此我建议参考以下三点优化你的提问方式。
+::: tip 提示
+好的提问，是成功的一半。能否”**挣到**“想要的答案，取决于您的提问水平。因此我建议参考以下三点优化你的提问方式。
+:::
 
 
 ### 1. 礼貌尊重
 
 大家是自愿参与交流，并没有义务免费为他人答疑解惑（当然，您可以发个红包的方式表达谢意）。因此，请保持基本的互相尊重，禁止散布负能量，以及发布任何形式的广告链接。
 
-> **💡**
->
+::: tip 提示
 网站与社群汇聚了各行各业的精英：包括但不限于金融、地产、科技、互联网、AI、司法、外贸、电商、自媒体等。职业包括但不限于在校生、UP主、博主、Freelancer、产品经理、运营、技术人员、独立开发者、创业者与企业家。
+:::
 
 
 ### 2. 阅读手册
@@ -72,7 +76,7 @@ NotionNext提供了博客文档，社群交流，评论留言、邮件等渠道�
 
 我希望切换站点的主题为`example`，因此我在 GitHub 上修改了配置文件 `blog.config.js` 的`THEME`这个参数的配置，但在网页上并没有看到生效，我使用的部署方案是 Vercel 。以下是相关信息，请帮我看一下，非常感谢！
 
-1. 【代码地址】 [https://github.com/tangly1024/NotionNext](https://github.com/tangly1024/NotionNext) （这里贴你自己的仓库）
+1. 【代码地址】 `https://github.com/username/NotionNext` （这里贴你自己的仓库）
 
 1. 【NotionID】02ab3b8678004aa69e9e415905ef32a5 (这里可以贴你的页面ID)
 
@@ -82,7 +86,7 @@ NotionNext提供了博客文档，社群交流，评论留言、邮件等渠道�
 <details>
 <summary>附-如何获取部署日志</summary>
 
-截图您的部署日志，向[群友](https://docs.tangly1024.com/article/about-author)寻求帮助
+截图您的部署日志，向[群友](/user-guide/help/feedback)寻求帮助
     1. 在Vercel的后台看到您的每次部署记录(点击展开)
 ![Untitled](/legacy/931136302b967d5a.png)
     1. 请截图部署的错误日志，错误信息越完整越好；
@@ -95,14 +99,14 @@ NotionNext提供了博客文档，社群交流，评论留言、邮件等渠道�
 
 ## 留言讨论
 
-[联系我 | NotionNext文档](https://docs.tangly1024.com/article/about-author)
+[联系我 | NotionNext文档](/user-guide/help/feedback)
 
 开始练习写作的小白，我觉得相比写什么、怎么写、写得如何来说，更重要的是坚持写作。
 
 
 ## 加入社群
 
-[2.社群交流 | NotionNext文档](https://docs.tangly1024.com/article/chat-community)
+[2.社群交流 | NotionNext文档](/user-guide/help/community)
 
 NotionNext教程
 

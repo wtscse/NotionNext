@@ -12,7 +12,9 @@
 
 Twikoo支持支持即时通知反垃圾插件、隐私设置等功能，无需另外登录后台，并且配置方式也十分方便，在页面评论区就可以直接管理评论、配置插件。
 
-> **💡** Twikoo支持一键导入valine评论数据，您可以很方便地迁移评论数据。
+::: tip 提示
+Twikoo支持一键导入valine评论数据，您可以很方便地迁移评论数据。
+:::
 
 ![Untitled](/legacy/d93a06d972657351.png)
 
@@ -29,7 +31,9 @@ Twikoo支持支持即时通知反垃圾插件、隐私设置等功能，无需�
 
 ![Untitled](/legacy/ab22544ca490ee83.png)
 
-> **💡** 问题来了，twikoo的后台地址怎么获得呢？
+::: tip 提示
+问题来了，twikoo的后台地址怎么获得呢？
+:::
 
 借助vercel，您可以非常快速地部署自己的twikoo后台，用于储存评论数据。
 
@@ -38,7 +42,9 @@ Twikoo支持支持即时通知反垃圾插件、隐私设置等功能，无需�
 
 twikoo的后台数据存储是基于MongoDB数据库的，我们可以先注册创建一个免费的在线MongoDB数据库。
 
-> **💡** Twikoo我以经很久不重新部署了，除了参阅我下文的教程外，建议您参考官方最新的文档和视频。
+::: tip 提示
+Twikoo我以经很久不重新部署了，除了参阅我下文的教程外，建议您参考官方最新的文档和视频。
+:::
 
 关于Twikoo的部署建议您参考官方文档：
 
@@ -71,12 +77,14 @@ Products Solutions Developer Data Platform Innovate fast at scale with a unified
 ![选择最右边的免费方案即可](/legacy/64be60c684cf3ed0.png)
 ![选择一个地区，点击Create Cluster](/legacy/062721204e95de2e.png)
 ![创建用户名密码](/legacy/7287a4b355fd6b07.png)
-> **💡** 这里下方要设置一个允许访问该数据库的IP地址，推荐设置0.0.0.0，即所有地址都允许访问，毕竟我也不知道自己会用什么ip访问这个数据库。
+::: tip 提示
+这里下方要设置一个允许访问该数据库的IP地址，推荐设置0.0.0.0，即所有地址都允许访问，毕竟我也不知道自己会用什么ip访问这个数据库。
 依次点击：1.左侧菜单Network Access、2.右侧面板Add IP Adress，
->
+
 ![Untitled](/legacy/f9763ea59bc1f9cb.png)
-> 输入IP地址0.0.0.0/0并提交
-> ![Untitled](/legacy/a5ca6e95d8340747.png)
+输入IP地址0.0.0.0/0并提交
+![Untitled](/legacy/a5ca6e95d8340747.png)
+:::
 
 </details>
 
@@ -86,7 +94,9 @@ Products Solutions Developer Data Platform Innovate fast at scale with a unified
 ![面板首页点击Connect点击 MongoDB Drivers](/legacy/dec764bfa41f11ed.png)
 ![选择 Drivers类型](/legacy/1e3a3576ce8d49c9.png)
 ![这里的版本号无关紧要](/legacy/db6271ab043a058b.png)
-> **💡** 注意，**&lt;password&gt;**要手动替换成您设置的密码 ; 填写密码时去掉两侧的尖括号 &lt; &gt;
+::: tip 提示
+注意，**&lt;password&gt;**要手动替换成您设置的密码 ; 填写密码时去掉两侧的尖括号 &lt; &gt;
+:::
 
 示例 **mongodb+srv://username:123456@xx.com**
 
@@ -98,9 +108,11 @@ Products Solutions Developer Data Platform Innovate fast at scale with a unified
 <details>
 <summary>1.点击此链接导入代码</summary>
 
-> **💡** 部分网友反馈：部署到 Vercel的时候总是报错：An unexpected error occurred. Our team has already been notified and are working to resolve the issue, please try again shortly.而用Twikoo官方版本的一键部署就可以成功部署。
+::: tip 提示
+部分网友反馈：部署到 Vercel的时候总是报错：An unexpected error occurred. Our team has already been notified and are working to resolve the issue, please try again shortly.而用Twikoo官方版本的一键部署就可以成功部署。
 我很久不部署twikoo了，这里建议还是参阅官方的代码
 [云函数部署 | Twikoo 文档](https://twikoo.js.org/backend.html?fbclid=IwAR0DM3tX9I0zBlY9oYorxC_d9c0LcQYR6J1p4OS-kiNF2PcLkcEmShBCayQ)
+:::
 
 一个简洁、安全、免费的静态网站评论系统
 <details>
@@ -173,13 +185,13 @@ Create Git Repository To ensure you can easily update your project after deployi
 
 NotionNext还支持其它多种评论插件，可访问以下文章获得帮助：
 
-[NotionNext如何添加评论插件 | TANGLY's BLOG](https://tangly1024.com/article/notion-next-comment-plugin)
+[NotionNext如何添加评论插件 | TANGLY's BLOG](/user-guide/comments/overview)
 
 NotionNext添加Cusdis/Giscus/Gitalk/Utterance的步骤教程
 
-[NotionNext配置评论插件-Valine/Waline | TANGLY's BLOG](https://blog.tangly1024.com/article/notionnext-valine)
+[NotionNext配置评论插件-Valine/Waline | TANGLY's BLOG](/user-guide/comments/valine)
 
-Valine和Waline都是 基于LeanCloud 的 快速、简洁的评论系统，理论上支持但不限于静态博客。 Waline 是从 Valine 衍生的带后端评论系统，可以看作是Valine的升级版，具备更多Valine不支持的功能，两者的数据结构是可以兼容的，你甚至可以同时安装Valine和Waline，两者的评论互通。 两个插件均要借助LeanCloud提供的云函数，云数据存储等功能，对于普通开发者来说免费版已经足够使用。 1.请先登录或注册 LeanCloud, 进入控制台后点击左下角创建应用： 2.进入刚刚创建的应用，选择左下角的设置&gt;应用Key，查看你的APP ID和APP Key。 获取上述的 appId、 appKey等参数后，就可以直接在NotionNext（版本≥3.3.9）中激活valine了， 如果不想使用Valine可以直接跳到文章下一节《Waline部署》部分。 在NotionNext的Vercel环境变量中配置以下内容： NEXT_PUBLIC_VALINE_SERVER_URLS NEXT_PUBLIC_VALINE_PLACEHOLDER 环境变量配置示例： NEXT_PUBLIC_VALINE_SERVER_URLS 说明 此参数选填，在应用内部会尝试自动获取，如果发现获取失败，请手动提供配置，配置方法： 在LeanCloud刚创建的应用中，选择左下角的 设置&gt; 应用Key，找到 Request 域名 第一行： 注意，需要手动在域名前加上 https:// 否则会无法访问valine评论。 安全域名（可选） 点击展开 leanCloud支持设置自己的 安全域名 ，设置后，仅列表中配置的域名才可以访问你的服务。例如我只在博客中用到valine服务，那么我的安全域名只需要配置为 https://tangly1024.com。 部署valine后台（可选）点击展开 valine没有自带后台，可以借助 Valine-Admin 几分钟就可以部署一个管理后台，支持行评论的查看、删除，以及邮件通知，垃圾评论过滤等功能。部署方式不在此文赘述，可以请参阅 官方文档中的"云引擎一键部署 "部分.
+Valine和Waline都是 基于LeanCloud 的 快速、简洁的评论系统，理论上支持但不限于静态博客。 Waline 是从 Valine 衍生的带后端评论系统，可以看作是Valine的升级版，具备更多Valine不支持的功能，两者的数据结构是可以兼容的，你甚至可以同时安装Valine和Waline，两者的评论互通。 两个插件均要借助LeanCloud提供的云函数，云数据存储等功能，对于普通开发者来说免费版已经足够使用。 1.请先登录或注册 LeanCloud, 进入控制台后点击左下角创建应用： 2.进入刚刚创建的应用，选择左下角的设置&gt;应用Key，查看你的APP ID和APP Key。 获取上述的 appId、 appKey等参数后，就可以直接在NotionNext（版本≥3.3.9）中激活valine了， 如果不想使用Valine可以直接跳到文章下一节《Waline部署》部分。 在NotionNext的Vercel环境变量中配置以下内容： NEXT_PUBLIC_VALINE_SERVER_URLS NEXT_PUBLIC_VALINE_PLACEHOLDER 环境变量配置示例： NEXT_PUBLIC_VALINE_SERVER_URLS 说明 此参数选填，在应用内部会尝试自动获取，如果发现获取失败，请手动提供配置，配置方法： 在LeanCloud刚创建的应用中，选择左下角的 设置&gt; 应用Key，找到 Request 域名 第一行： 注意，需要手动在域名前加上 https:// 否则会无法访问valine评论。 安全域名（可选） 点击展开 leanCloud支持设置自己的 安全域名 ，设置后，仅列表中配置的域名才可以访问你的服务。例如我只在博客中用到valine服务，那么我的安全域名只需要配置为 /user-guide/intro。 部署valine后台（可选）点击展开 valine没有自带后台，可以借助 Valine-Admin 几分钟就可以部署一个管理后台，支持行评论的查看、删除，以及邮件通知，垃圾评论过滤等功能。部署方式不在此文赘述，可以请参阅 官方文档中的"云引擎一键部署 "部分.
 
 
 ### FAQ

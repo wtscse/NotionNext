@@ -20,14 +20,16 @@ V4.3版本中加入的免费主题：为公司、创业者、独立开发者、�
 
 ![Untitled](/legacy/a05df798fa2d3896.png)
 
-> **💡** 本文将介绍Starter主题的使用方式
+::: tip 提示
+本文将介绍Starter主题的使用方式
+:::
 
 
 ### 如何切换至Starter主题？
 
 请先升级NotionNext至最新版，`&gt; V4.3`
 
-然后参考《[主题功能说明-如何修改默认主题进行配置](https://docs.tangly1024.com/article/notion-next-themes#2d5076c82d854615b995c4eee08c2182)》修改您的默认主题即可。
+然后参考《[主题功能说明-如何修改默认主题进行配置](/user-guide/themes/overview#2d5076c82d854615b995c4eee08c2182)》修改您的默认主题即可。
 
 
 ## 配置说明
@@ -38,7 +40,9 @@ V4.3版本中加入的免费主题：为公司、创业者、独立开发者、�
 
 LOGO ， HERO，NAV、FEATURE、ABOUT、PRICING、TESTIMONIALS、TEAM、BLOG、CONTACT、FOOTERBRANDS
 
-> **💡** Starter主题需要自定配置的内容比较多，修改代码和配置环境变量会比较麻烦，您可以 借助《‣ 》来批量导入配置。
+::: tip 提示
+Starter主题需要自定配置的内容比较多，修改代码和配置环境变量会比较麻烦，您可以 借助《‣ 》来批量导入配置。
+:::
 
 
 ### 支持Notion_Config
@@ -46,9 +50,22 @@ LOGO ， HERO，NAV、FEATURE、ABOUT、PRICING、TESTIMONIALS、TEAM、BLOG、C
 在目前的版本中，所有的主题配置都支持在Notion_Config中配置了。例如要修改作者成员，可以直接在Notion_config中添加如下配置
 
 
-## Starter主题配色
+## Starter主题调色
 
-主题默认是蓝色，您可以通过修改GLOBAL_CSS的方式来调整主题的颜色：修改方式如下图：
+Starter 主题默认是蓝色。现在推荐优先使用主题色变量调色，不再建议用 `GLOBAL_CSS` 覆盖 `.bg-primary`、`.text-primary` 这类 Tailwind 语义类名。
+
+可在 Notion Config 表或 `themes/starter/config.js` 中配置：
+
+```js
+STARTER_COLOR_PRIMARY: '#3758f9'
+STARTER_COLOR_PRIMARY_HOVER: '#1b44c8'
+STARTER_COLOR_DARK: '#111928'
+STARTER_COLOR_TEXT_MUTED: '#637381'
+```
+
+也可以在全局主题工具中切换到 Starter 后查看当前调色板，复制需要覆盖的配置项。
+
+旧版本可以通过修改GLOBAL_CSS的方式来调整主题的颜色：修改方式如下图：
 
 ![image.png](/legacy/a3d3a1f5aa3ed592.png)
 
@@ -117,9 +134,9 @@ LOGO ， HERO，NAV、FEATURE、ABOUT、PRICING、TESTIMONIALS、TEAM、BLOG、C
 
   // 中间两个按钮
   STARTER_HERO_BUTTON_1_TEXT: '开始体验', // 英雄区按钮
-  STARTER_HERO_BUTTON_1_URL: 'https://docs.tangly1024.com/article/vercel-deploy-notion-next', // 英雄区按钮
+  STARTER_HERO_BUTTON_1_URL: '/user-guide/deploy-vercel', // 英雄区按钮
   STARTER_HERO_BUTTON_2_TEXT: '在Github上关注', // 英雄区按钮
-  STARTER_HERO_BUTTON_2_URL: 'https://github.com/tangly1024/NotionNext', // 英雄区按钮
+  STARTER_HERO_BUTTON_2_URL: 'https://github.com/notionnext-org/NotionNext', // 英雄区按钮
   STARTER_HERO_PREVIEW_IMAGE: '/images/starter/hero/hero-image.webp', // 产品预览图 ，默认读取public目录下图片； 您可以上传自己的图片至/public/starter/hero目录下；
 ```
 
@@ -157,22 +174,22 @@ LOGO ， HERO，NAV、FEATURE、ABOUT、PRICING、TESTIMONIALS、TEAM、BLOG、C
   STARTER_FEATURE_1_TITLE_1: '免费且开源', // 特性1
   STARTER_FEATURE_1_TEXT_1: '项目源码在Github上完全开放共享，遵循MIT协议', // 特性1
   STARTER_FEATURE_1_BUTTON_TEXT: '了解更多', // 特性1
-  STARTER_FEATURE_1_BUTTON_URL: 'https://github.com/tangly1024/NotionNext', // 特性1
+  STARTER_FEATURE_1_BUTTON_URL: 'https://github.com/notionnext-org/NotionNext', // 特性1
 
   STARTER_FEATURE_2_TITLE_1: '多种主题定制', // 特性2
   STARTER_FEATURE_2_TEXT_1: '数十种主题,适用于不同场景，总有一款适合你', // 特性2
   STARTER_FEATURE_2_BUTTON_TEXT: '了解更多', // 特性2
-  STARTER_FEATURE_2_BUTTON_URL: 'https://docs.tangly1024.com/article/notion-next-themes', // 特性2
+  STARTER_FEATURE_2_BUTTON_URL: '/user-guide/themes/overview', // 特性2
 
   STARTER_FEATURE_3_TITLE_1: '优秀的性能', // 特性3
   STARTER_FEATURE_3_TEXT_1: '基于NextJS开发，更快的响应速度，更好的SEO', // 特性3
   STARTER_FEATURE_3_BUTTON_TEXT: '了解更多', // 特性3
-  STARTER_FEATURE_3_BUTTON_URL: 'https://docs.tangly1024.com/article/next-js', // 特性3
+  STARTER_FEATURE_3_BUTTON_URL: '/user-guide/development/nextjs', // 特性3
 
   STARTER_FEATURE_4_TITLE_1: '便捷的写作体验', // 特性4
   STARTER_FEATURE_4_TEXT_1: '只需在Notion笔记中编修，自动同步到网站', // 特性4
   STARTER_FEATURE_4_BUTTON_TEXT: '了解更多', // 特性4
-  STARTER_FEATURE_4_BUTTON_URL: 'https://docs.tangly1024.com/about', // 特性4
+  STARTER_FEATURE_4_BUTTON_URL: '/user-guide/intro', // 特性4
 ```
 
 
@@ -185,7 +202,7 @@ LOGO ， HERO，NAV、FEATURE、ABOUT、PRICING、TESTIMONIALS、TEAM、BLOG、C
   STARTER_ABOUT_TITLE: '一套轻量实用的建站解决方案',
   STARTER_ABOUT_TEXT: 'NotionNext的愿景是帮助非技术人员的小白，最低成本、最快速地搭建自己的网站，帮助您将自己的产品与故事高效地传达给世界。 &lt;br /&gt; &lt;br /&gt; 功能强大的Notion笔记，简单快速的Vercel托管平台，组成一个简单的网站',
   STARTER_ABOUT_BUTTON_TEXT: '了解更多',
-  STARTER_ABOUT_BUTTON_URL: 'https://docs.tangly1024.com/about',
+  STARTER_ABOUT_BUTTON_URL: '/user-guide/intro',
   STARTER_ABOUT_IMAGE_1: '/images/starter/about/about-image-01.jpg',
   STARTER_ABOUT_IMAGE_2: '/images/starter/about/about-image-02.jpg',
   STARTER_ABOUT_TIPS_1: '7000+',
@@ -200,9 +217,9 @@ LOGO ， HERO，NAV、FEATURE、ABOUT、PRICING、TESTIMONIALS、TEAM、BLOG、C
 
 ![Untitled](/legacy/d409016f312f9079.png)
 
-> **⚠️**
->
+::: warning 注意
 NotionNext不提供电商购买相关服务，这里的价格链接可以借助第三方支付平台，例如[Stripe](https://stripe.com/)、[Lemonsqueezy](https://www.lemonsqueezy.com/)、[千寻寄售](https://qianxun1688.com/)以及第三方的电商平台链接等。
+:::
 
 ```JavaScript
 // 首页价格区块
@@ -313,10 +330,10 @@ STARTER_TESTIMONIALS_TITLE: '用户反馈',
   STARTER_FAQ_TEXT_2: '我们收集了常见的用户疑问',
 
   STARTER_FAQ_1_QUESTION: 'NotionNext有帮助文档吗？',
-  STARTER_FAQ_1_ANSWER: 'NotionNext提供了&lt;a href="https://docs.tangly1024.com/about" className="underline"&gt;帮助文档&lt;/a&gt;，操作&lt;a href="https://www.bilibili.com/video/BV1fM4y1L7Qi/" className="underline"&gt;演示视频&lt;/a&gt;，以及&lt;a href="https://docs.tangly1024.com/article/chat-community" className="underline"&gt;交流社群&lt;/a&gt;来协助您完成网站的搭建部署',
+  STARTER_FAQ_1_ANSWER: 'NotionNext提供了&lt;a href="/user-guide/intro" className="underline"&gt;帮助文档&lt;/a&gt;，操作&lt;a href="https://www.bilibili.com/video/BV1fM4y1L7Qi/" className="underline"&gt;演示视频&lt;/a&gt;，以及&lt;a href="/user-guide/help/community" className="underline"&gt;交流社群&lt;/a&gt;来协助您完成网站的搭建部署',
 
   STARTER_FAQ_2_QUESTION: '部署后要如何编写文章？',
-  STARTER_FAQ_2_ANSWER: '您可以在Notion中之间添加或修改类型为Post的页面，内容将被实时同步在站点中，详情参考&lt;a className="underline" href="https://docs.tangly1024.com/article/start-to-write"&gt;《帮助文档》&lt;/a&gt;',
+  STARTER_FAQ_2_ANSWER: '您可以在Notion中之间添加或修改类型为Post的页面，内容将被实时同步在站点中，详情参考&lt;a className="underline" href="/user-guide/notion-database"&gt;《帮助文档》&lt;/a&gt;',
 
   STARTER_FAQ_3_QUESTION: '站点部署失败，更新失败？',
   STARTER_FAQ_3_ANSWER: '通常是配置修改错误导致，请检查配置或者重试操作步骤，或者通过Vercel后台的Deployments中找到错误日志，并向网友求助',
@@ -335,7 +352,7 @@ STARTER_TESTIMONIALS_TITLE: '用户反馈',
 ```JavaScript
 STARTER_TEAM_TITLE: '团队成员',
   STARTER_TEAM_TEXT_1: '我们的开发者团队',
-  STARTER_TEAM_TEXT_2: 'NotionNext 由众多开源技术爱好者们共同合作完成，感谢每一位&lt;a className="underline" href="https://github.com/tangly1024/NotionNext/graphs/contributors"&gt;贡献者&lt;/a&gt;',
+  STARTER_TEAM_TEXT_2: 'NotionNext 由众多开源技术爱好者们共同合作完成，感谢每一位&lt;a className="underline" href="https://github.com/notionnext-org/NotionNext/graphs/contributors"&gt;贡献者&lt;/a&gt;',
 
   // 这里不支持CONFIG和环境变量，需要一一修改此处代码。
   STARTER_TEAM_ITEMS: [
@@ -456,25 +473,25 @@ STARTER_FOOTER_SLOGAN: '我们通过技术为品牌和公司创造数字体验�
       TITLE: '关于我们',
       LINK_GROUP: [
         { TITLE: '官方主页', URL: '/#home' },
-        { TITLE: '操作文档', URL: 'https://docs.tangly1024.com/about' },
-        { TITLE: '帮助支持', URL: 'https://docs.tangly1024.com/article/how-to-question' },
-        { TITLE: '合作申请', URL: 'https://docs.tangly1024.com/my-service' }
+        { TITLE: '操作文档', URL: '/user-guide/intro' },
+        { TITLE: '帮助支持', URL: '/user-guide/help/community-rules' },
+        { TITLE: '合作申请', URL: '/user-guide/help/support' }
       ]
     },
     {
       TITLE: '功能特性',
       LINK_GROUP: [
-        { TITLE: '部署指南', URL: 'https://docs.tangly1024.com/article/vercel-deploy-notion-next' },
-        { TITLE: '升级指南', URL: 'https://docs.tangly1024.com/article/how-to-update-notionnext' },
-        { TITLE: '最新版本', URL: 'https://docs.tangly1024.com/article/latest' }
+        { TITLE: '部署指南', URL: '/user-guide/deploy-vercel' },
+        { TITLE: '升级指南', URL: '/user-guide/update' },
+        { TITLE: '最新版本', URL: '/user-guide/changelog/latest' }
       ]
     },
     {
       TITLE: 'Notion写作',
       LINK_GROUP: [
-        { TITLE: 'Notion开始写作', URL: 'https://docs.tangly1024.com/article/start-to-write' },
-        { TITLE: '快捷键提升效率', URL: 'https://docs.tangly1024.com/article/notion-short-key' },
-        { TITLE: '中国大陆使用Notion', URL: 'https://docs.tangly1024.com/article/notion-faster' }
+        { TITLE: 'Notion开始写作', URL: '/user-guide/notion-database' },
+        { TITLE: '快捷键提升效率', URL: '/user-guide/notion/short-keys' },
+        { TITLE: '中国大陆使用Notion', URL: '/user-guide/notion/faster' }
       ]
     }
   ],
@@ -513,7 +530,7 @@ const CONFIG = {
 
   STARTER_POST_REDIRECT_ENABLE: true, // 默認開啟重定向
   STARTER_POST_REDIRECT_URL: 'https://blog.tangly1024.com', // 重定向域名
-  STARTER_NEWSLETTER: process.env.NEXT_PUBLIC_THEME_STARTER_NEWSLETTER || false // 是否开启邮件订阅 请先配置mailchimp功能 https://docs.tangly1024.com/article/notion-next-mailchimp
+  STARTER_NEWSLETTER: process.env.NEXT_PUBLIC_THEME_STARTER_NEWSLETTER || false // 是否开启邮件订阅 请先配置mailchimp功能 /user-guide/plugins/mailchimp
 }
 export default CONFIG
 ```

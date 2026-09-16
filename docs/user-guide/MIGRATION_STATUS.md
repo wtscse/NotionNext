@@ -30,7 +30,7 @@
 | --- | --- |
 | [reference/features.md](./reference/features.md) | 与 `conf/*.config.js` 对齐的全站配置 |
 | [reference/notion-4x.md](./reference/notion-4x.md) | 近年 Notion / 站点能力 |
-| [themes/THEMES_CATALOG.md](./themes/THEMES_CATALOG.md) | 25 主题说明与配置前缀 |
+| [themes/THEMES_CATALOG.md](./themes/THEMES_CATALOG.md) | 26 主题说明与配置前缀 |
 | [changelog/latest.md](./changelog/latest.md) | 4.9.5.x 要点（非复制 v4.0 全文） |
 
 维护时：改功能 → 先改 `conf/` → 再改 `reference/features.md` 与相关 user-guide 篇目。
@@ -41,7 +41,7 @@
 | --- | --- |
 | `v4.0` 超长 changelog | [changelog/v4-history.md](./changelog/v4-history.md) 索引 + GitHub Releases |
 | `latest` | [changelog/latest.md](./changelog/latest.md) |
-| `example-1` | [notion/example-article.md](./notion/example-article.md) + [旧站原文](https://docs.tangly1024.com/article/example-1) |
+| `example-1` | [notion/example-article.md](./notion/example-article.md) + [旧站原文](/user-guide/notion/example-article) |
 | `notion-tutorial` | 付费课程外链 |
 | `vercel-accelerate`、`vercel-redploy` | [deploy/vercel-accelerate.md](./deploy/vercel-accelerate.md)、[deploy/vercel-redeploy.md](./deploy/vercel-redeploy.md) |
 
